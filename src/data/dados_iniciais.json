@@ -1,0 +1,161 @@
+{
+  "categorias": [
+    {
+      "titulo": "Cinematics",
+      "link": "https://www.youtube.com/watch?v=D4L0OkSrsI8",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Animações do League of Legends",
+        "url": "https://www.youtube.com/playlist?list=PLbAFXJC0J5GaupX-BYDsT12YfCUppoxHc"
+      },
+      "videos": [
+        {
+          "titulo": "Warriors Season 2020 - League of Legends",
+          "url": "https://www.youtube.com/watch?v=aR-KAldshAE"
+        },
+        {
+          "titulo": "Tales of Runeterra: Bilgewater",
+          "url": "https://www.youtube.com/watch?v=lbJhZW-iN0s"
+        },
+        {
+          "titulo": "Tales of Runeterra: Ionia",
+          "url": "https://www.youtube.com/watch?v=HGPoGtSBhu0"
+        },
+        {
+          "titulo": "Beyond the Garden | Lillia Champion",
+          "url": "https://www.youtube.com/watch?v=t495A_JfatA"
+        },
+        {
+          "titulo": "Awaken - Season 2019 Cinematic",
+          "url": "https://www.youtube.com/watch?v=zF5Ddo9JdpY"
+        },
+        {
+          "titulo": "Arcane",
+          "url": "https://www.youtube.com/watch?v=IA-v_LB3Qpc"
+        }      
+      ]
+    },
+    {
+      "titulo": "Worlds",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Mundiais de League of Legends",
+        "url": "https://lolesports.com/"
+      },
+      "videos": [
+        {
+          "titulo": "Opening Ceremony | Finals | 2017 World Championship",
+          "url": "https://www.youtube.com/watch?v=fn5kSCj-VNM"
+        },
+        {
+          "titulo": "Worlds Collide: The Final",
+          "url": "https://www.youtube.com/watch?v=8Dlyp6wkM6c"
+        },
+        {
+          "titulo": "2016 World Championship Moments and Memories",
+          "url": "https://www.youtube.com/watch?v=PyDZYLYWcNg"
+        }, 
+        {
+          "titulo": "2017 World Championship Moments and Memories",
+          "url": "https://www.youtube.com/watch?v=7uYoQ2i16nY"
+        }
+      ]
+    },
+    {
+      "titulo": "Champion Montages",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Confira os melhores combos",
+        "url": "https://www.youtube.com/channel/UCzTucv2vIwshutDxyTcRhmw"
+      },
+      "videos": [
+        {
+          "titulo": "Yone Montage - Insane Combo New Champion",
+          "url": "https://www.youtube.com/watch?v=gWN6dHe571Y"
+        },
+        {
+          "titulo": "Neeko Montage - Clean Combo",
+          "url": "https://www.youtube.com/watch?v=NQwaH6v9ffk"
+        },
+        {
+          "titulo": "Thresh Montage #6 League of Legends Thresh S10 Montage",
+          "url": "https://www.youtube.com/watch?v=E0XJXxLKyGg"
+        },
+        {
+          "titulo": "Akali Montage #5 League of Legends Akali S10 Montage",
+          "url": "https://www.youtube.com/watch?v=q7aig4QhGY0"
+        }
+      ]
+    },
+    {
+      "titulo": "Skin Spotlights",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Confira as novas Skins",
+        "url": "https://www.youtube.com/channel/UC0NwzCHb8Fg89eTB5eYX17Q"
+      },
+      "videos": [
+        {
+          "titulo": "Spirit Blossom Ahri",
+          "url": "https://www.youtube.com/watch?v=cfCbwHnBX20"
+        },
+        {
+          "titulo": "Spirit Blossom Thresh",
+          "url": "https://www.youtube.com/watch?v=Za5XLemQm0g"
+        },
+        {
+          "titulo": "Spirit Blossom Riven",
+          "url": "https://www.youtube.com/watch?v=q6KbQXQTIW0"
+        },
+        {
+          "titulo": "Spirit Blossom Cassiopeia",
+          "url": "https://www.youtube.com/watch?v=eLIKFsl8Xb0"
+        }        
+      ]
+    },
+    {
+      "titulo": "Outros jogos",
+      "cor": "red",
+      "link_extra": {
+        "text": "Riot Games",
+        "url": "https://www.riotgames.com/pt-br"
+      },
+      "videos": [
+        {
+          "titulo": "VALORANT",
+          "url": "https://www.youtube.com/watch?v=h1Kp9x_ADZw"
+        },
+        {
+          "titulo": "Teamfight Tactics",
+          "url": "https://www.youtube.com/watch?v=_XbhPF2jTC0"
+        },
+        {
+          "titulo": "Legends of Runeterra",
+          "url": "https://www.youtube.com/watch?v=hJSpkNfCSMs"
+        },
+        {
+          "titulo": "Wild Rift",
+          "url": "https://www.youtube.com/watch?v=5sCOEE0Sbfo"
+        }
+      ]
+    },
+    {
+      "titulo": "Streamers",
+      "cor": "#6b5be2",
+      "videos": [
+        {
+          "titulo": "Yoda",
+          "url": "https://www.youtube.com/watch?v=TQn7vQGKXm0"
+        },
+        {
+          "titulo": "Jukes",
+          "url": "https://www.youtube.com/watch?v=NvYykY-6Srw"
+        },
+        {
+          "titulo": "Kami",
+          "url": "https://www.youtube.com/watch?v=Bsi8zO0_qyc"
+        }
+      ]
+    }
+  ]
+}
