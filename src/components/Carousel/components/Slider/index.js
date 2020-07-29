@@ -26,6 +26,14 @@ const Container = styled.ul`
   .slick-next {
     right: 16px;
   }
+
+  li button::before{
+    color: white;
+  }
+  
+  li.slick-active button::before{
+    color: red;
+  }
 `;
 
 export const SliderItem = styled.li`
@@ -42,12 +50,43 @@ export const SliderItem = styled.li`
 const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
-      dots: false,
-      infinite: false,
-      speed: 300,
+      dots: true,
+      infinite: true,
+      speed: 1000,
       centerMode: false,
       variableWidth: true,
       adaptiveHeight: true,
+      swipe:false,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            speed: 700,
+            swipe: true,
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            speed: 700,
+            swipe:true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 250,
+            swipe:true
+          }
+        }
+      ]
     }}
     >
       {children}
