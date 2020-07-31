@@ -2,6 +2,7 @@ import React from 'react';
 import Menu from '../../components/Menu';
 import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain';
+import BannerVideo from '../../components/BannerVideo';
 import Carousel from '../../components/Carousel';
 import Footer from '../../components/Footer';
 
@@ -10,11 +11,14 @@ function Home() {
     <div style={{background: "#141414"}}>
       <Menu/>
 
-      <BannerMain
+      {/* <BannerMain
         videoTitle = {dadosIniciais.categorias[0].videos[0].titulo}
         url = {dadosIniciais.categorias[0].videos[0].url}
         videoDescription = {"Cinematic de lançamento da Season de 2020"}
-      />
+      /> */}
+
+      <BannerVideo>
+      </BannerVideo>
 
       <Carousel
         ignoreFirstVideo
