@@ -6,25 +6,37 @@ import styled from 'styled-components';
 const Container = styled.ul`
   padding: 0;
   margin: 0;
+
+  &:hover button.slick-arrow {
+    display: block !important;
+    @media (max-width: 800px) {
+      display: none !important;
+    }
+  }
+
   .slick-prev,
   .slick-next {
     z-index: 50;
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 30px;
-    height: 30px;
     transform: initial;
     &:before {
       font-size: 30px;
     }
   }
-  
+
+  .slick-arrow {
+    background-color: rgb(20 20 20 / 55%);
+    min-height: 100%;
+    width: 70px;
+    display: none !important;
+  }
   .slick-prev {
     left: 0;
   }
   .slick-next {
-    right: 16px;
+    right: 0;
   }
 
   li button::before{
@@ -37,7 +49,7 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
-  margin-right: 16px;
+  margin-right: 5px;
   img {
     margin: 16px;
     width: 298px;
@@ -46,17 +58,16 @@ export const SliderItem = styled.li`
   }
 `;
 
-
 const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 1000,
       centerMode: false,
       variableWidth: true,
       adaptiveHeight: true,
-      swipe:false,
+      swipe: false,
       slidesToScroll: 4,
       responsive: [
         {
@@ -66,7 +77,7 @@ const Slider = ({ children }) => (
             slidesToScroll: 3,
             speed: 700,
             swipe: true,
-          }
+          },
         },
         {
           breakpoint: 700,
@@ -74,8 +85,8 @@ const Slider = ({ children }) => (
             slidesToShow: 2,
             slidesToScroll: 2,
             speed: 700,
-            swipe:true
-          }
+            swipe: true,
+          },
         },
         {
           breakpoint: 480,
@@ -83,10 +94,10 @@ const Slider = ({ children }) => (
             slidesToShow: 1,
             slidesToScroll: 1,
             speed: 250,
-            swipe:true
-          }
-        }
-      ]
+            swipe: true,
+          },
+        },
+      ],
     }}
     >
       {children}
@@ -94,4 +105,4 @@ const Slider = ({ children }) => (
   </Container>
 );
 
-export default Slider; 
+export default Slider;

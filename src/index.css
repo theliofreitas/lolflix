@@ -5,10 +5,11 @@
 
 :root {
   --primary: #2A7AE4;
-  --black: #000000;
+  --black: rgb(20, 20, 20);
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
+  --gray: grey;
   --white: #FFFFFF;
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;

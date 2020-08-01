@@ -3,7 +3,7 @@
     {
       "id": 1,
       "titulo": "Cinematics",
-      "cor": "##6BD1FF",
+      "cor": "#6BD1FF",
       "link_extra": {
         "text": "Animações do League of Legends",
         "url": "https://www.youtube.com/playlist?list=PLbAFXJC0J5GaupX-BYDsT12YfCUppoxHc"
@@ -59,7 +59,7 @@
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "Warriors Season 2020 - League of Legends",
+      "titulo": "Warriors League of Legends",
       "url": "https://www.youtube.com/watch?v=aR-KAldshAE"
     },
     {
