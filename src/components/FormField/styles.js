@@ -24,7 +24,7 @@ Label.Text = styled.span`
   align-items: center;
   
   transform-origin: 0% 0%;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 300;
   
@@ -37,7 +37,7 @@ export const Input = styled.input`
   display: block;
   width: 100%;
   height: 57px;
-  font-size: 18px;
+  font-size: 1em;
   
   outline: 0;
   border: 0;

@@ -1,7 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 import Menu from '../Menu';
 import Footer from '../Footer';
-import styled from 'styled-components';
 
 const Main = styled.main`
     background-color: var(--black);
@@ -12,16 +12,24 @@ const Main = styled.main`
     padding-right: 5%;
 `;
 
+export const Grid = styled.div.attrs()`
+  display: grid;
+  grid-template-columns: repeat(${(props) => props.cols || 1}, 1fr);
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
 function PageDefault(props) {
-    return (
-        <>
-            <Menu/>
-                <Main>
-                    {props.children}
-                </Main>
-            <Footer/>
-        </>
-    );
+  return (
+    <>
+      <Menu />
+      <Main>
+        {props.children}
+      </Main>
+      <Footer />
+    </>
+  );
 }
 
 export default PageDefault;

@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-no-bind */
 /* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import PageDefault from '../../../components/PageDefault';
+import PageDefault, { Grid } from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
-import { Form } from './styles';
+import { Form, FormWrapper, CategoriesList, CategoriesListItem } from './styles';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -24,81 +24,81 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-  //   const URL = window.location.hostname.includes('localhost')
-  //     ? 'http://localhost:8080/categorias'
-  //     : 'https://lolflix.herokuapp.com/categorias';
-  //   fetch(URL)
-  //     .then(async (response) => {
-  //       const data = await response.json();
-  //       setCategorias([...data]);
-  //     });
-  // }, []);
-});
+    categoriasRepository.getAll()
+      .then((categorias) => {
+        setCategorias(categorias);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
 
   return (
     <PageDefault>
-      <h1>
-        Cadastro de Categoria:
-        {values.titulo}
-      </h1>
 
-      <Form onSubmit={function handleSubmit(e) {
-        e.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
+      <Grid cols="2">
 
-        clearForm(valoresIniciais);
-      }}
-      >
-        <FormField
-          label="Título da Categoria"
-          type="text"
-          name="titulo"
-          value={values.titulo}
-          onChange={handleChange}
-        />
+        <FormWrapper>
+          <h1>Cadastro de Categoria</h1>
+          <p>{values.titulo}</p>
 
-        <FormField
-          label="Descrição"
-          type="text"
-          as="textarea"
-          name="descricao"
-          value={values.descricao}
-          onChange={handleChange}
-        />
+          <Form onSubmit={function handleSubmit(e) {
+            e.preventDefault();
+            setCategorias([
+              ...categorias,
+              values,
+            ]);
 
-        <FormField
-          label="Cor"
-          type="color"
-          name="cor"
-          value={values.cor}
-          onChange={handleChange}
-        />
+            clearForm(valoresIniciais);
+          }}
+          >
+            <FormField
+              label="Título da Categoria"
+              type="text"
+              name="titulo"
+              value={values.titulo}
+              onChange={handleChange}
+            />
 
-        <Button>
-          Cadastrar
-        </Button>
-      </Form>
+            <FormField
+              label="Descrição"
+              type="text"
+              as="textarea"
+              name="descricao"
+              value={values.descricao}
+              onChange={handleChange}
+            />
 
-      {categorias.length === 0 && (
-        <div>
-          Loading...
-        </div>
-      )}
+            <FormField
+              label="Cor"
+              type="color"
+              name="cor"
+              value={values.cor}
+              onChange={handleChange}
+            />
 
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
-          </li>
-        ))}
-      </ul>
+            <Button>
+              Cadastrar
+            </Button>
+          </Form>
+        </FormWrapper>
 
-      <Link to="/">
-        Ir para home
-      </Link>
+        {categorias.length === 0 && (
+          <div>
+            Loading...
+          </div>
+        )}
+
+        <CategoriesList>
+          {categorias.map((categoria) => (
+            <CategoriesListItem color={`${categoria.cor}`} key={`${categoria.titulo}`}>
+              {categoria.titulo}
+            </CategoriesListItem>
+          ))}
+        </CategoriesList>
+
+      </Grid>
+
     </PageDefault>
   );
 }

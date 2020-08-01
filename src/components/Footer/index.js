@@ -14,9 +14,9 @@ function Footer() {
           <b>Imersão React da Alura</b>
         </a>
       </p>
-      <a href="https://www.linkedin.com/in/theliomarques/" class="fa fa-linkedin" target="_blank"></a>
-      <a href="https://github.com/theliofreitas/lolflix" class="fa fa-github" target="_blank"></a>
-      <a href="https://twitter.com/theliofreitas" class="fa fa-twitter" target="_blank"></a>
+      <a href="https://www.linkedin.com/in/theliomarques/" className="fa fa-linkedin" target="_blank"></a>
+      <a href="https://github.com/theliofreitas/lolflix" className="fa fa-github" target="_blank"></a>
+      <a href="https://twitter.com/theliofreitas" className="fa fa-twitter" target="_blank"></a>
     </FooterBase>
   );
 }

@@ -7,7 +7,7 @@ function YouTubeIframeResponsive({ youtubeID }) {
     <VideoContainer>
       <ResponsiveIframe
         title="Titulo do Iframe"
-        src={`https://www.youtube.com/embed/${youtubeID}?autoplay=1&mute=0`}
+        src={`https://www.youtube.com/embed/${youtubeID}?autoplay=1&mute=1&controls=0&modestbranding=1&autohide=1`}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
