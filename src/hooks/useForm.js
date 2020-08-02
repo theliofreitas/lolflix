@@ -53,6 +53,7 @@ function useForm(valoresIniciais, validate) {
     setErrors,
     validateValues,
     touched,
+    setTouched,
   };
 }
 

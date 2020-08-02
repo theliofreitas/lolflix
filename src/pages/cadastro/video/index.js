@@ -56,7 +56,7 @@ function CadastroVideo() {
     }
   }
 
-  const { values, handleChange, setNewValues, errors, validateValues, touched, handleBlur } = useForm({
+  const { values, handleChange, setNewValues, errors, validateValues, touched, setTouched, handleBlur } = useForm({
     titulo: '',
     url: '',
     categoria: '',
@@ -157,6 +157,12 @@ function CadastroVideo() {
 
           <Form onSubmit={(event) => {
             event.preventDefault();
+
+            setTouched({
+              titulo: true,
+              url: true,
+              categoria: true,
+            });
 
             validateValues(values);
 
