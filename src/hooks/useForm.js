@@ -21,10 +21,15 @@ function useForm(valoresIniciais) {
     setValues(valoresIniciais);
   }
 
+  function setNewValues(newValues) {
+    setValues(newValues);
+  }
+
   return {
     values,
     handleChange,
     clearForm,
+    setNewValues,
   };
 }
 
