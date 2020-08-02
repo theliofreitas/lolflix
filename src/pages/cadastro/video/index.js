@@ -1,3 +1,4 @@
+/* eslint-disable prefer-arrow-callback */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable arrow-body-style */
@@ -42,11 +43,10 @@ function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
   const categoryTitles = categorias.map(({ titulo }) => titulo);
-  const { values, handleChange, setNewValues } = useForm({});
   // YoutubeSearch
   const [resultadosPesquisa, setResultadosPesquisa] = useState([]);
   const [erroYoutubeAPI, setErroYoutubeAPI] = useState(false);
-
+  // Scroll functionality
   const refFormWrapper = useRef(null);
 
   function scrollTo(ref) {
@@ -55,6 +55,29 @@ function CadastroVideo() {
       window.scrollTo(0, ref.current.offsetTop);
     }
   }
+
+  const { values, handleChange, setNewValues, errors, validateValues, touched, handleBlur } = useForm({
+    titulo: '',
+    url: '',
+    categoria: '',
+  },
+  function (values) {
+    const errors = {};
+
+    if (values.titulo.length < 3) {
+      errors.titulo = 'Insira um título válido';
+    }
+
+    if (!values.url.includes('youtube.com/watch?v=')) {
+      errors.url = 'Insira uma URL do Youtube válida';
+    }
+
+    if (!categoryTitles.find((element) => element === values.categoria)) {
+      errors.categoria = 'Selecione uma categoria válida';
+    }
+
+    return errors;
+  });
 
   useEffect(() => {
     categoriasRepository.getAll()
@@ -135,17 +158,23 @@ function CadastroVideo() {
           <Form onSubmit={(event) => {
             event.preventDefault();
 
-            const categoriaEscolhida = categorias.find((categoria) => {
-              return categoria.titulo === values.categoria;
-            });
+            validateValues(values);
 
-            videosRepository.create({
-              titulo: values.titulo,
-              url: values.url,
-              categoriaId: categoriaEscolhida.id,
-            }).then(() => {
-              history.push('/');
-            });
+            if (Object.keys(errors).length <= 0) {
+              const categoriaEscolhida = categorias.find((categoria) => {
+                return categoria.titulo === values.categoria;
+              });
+
+              videosRepository.create({
+                titulo: values.titulo,
+                url: values.url,
+                categoriaId: categoriaEscolhida.id,
+              }).then(() => {
+                history.push('/');
+              });
+            } else {
+              console.log('Existem erros no formulário');
+            }
           }}
           >
 
@@ -155,6 +184,8 @@ function CadastroVideo() {
               name="titulo"
               value={values.titulo}
               onChange={handleChange}
+              onBlur={handleBlur}
+              spanError={touched.titulo && errors.titulo && <span className="form-field-error">{errors.titulo}</span>}
             />
 
             <FormField
@@ -163,6 +194,8 @@ function CadastroVideo() {
               name="url"
               value={values.url}
               onChange={handleChange}
+              onBlur={handleBlur}
+              spanError={touched.url && errors.url && <span className="form-field-error">{errors.url}</span>}
             />
 
             <FormField
@@ -171,6 +204,8 @@ function CadastroVideo() {
               name="categoria"
               value={values.categoria}
               onChange={handleChange}
+              onBlur={handleBlur}
+              spanError={touched.categoria && errors.categoria && <span className="form-field-error">{errors.categoria}</span>}
               suggestions={categoryTitles}
             />
 

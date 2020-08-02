@@ -1,13 +1,22 @@
-/* eslint-disable linebreak-style */
 import styled, { css } from 'styled-components';
 
 export const FormFieldWrapper = styled.div`
   position: relative;
+  text-align: left;
+  margin-bottom: 20px;
+
   textarea {
     min-height: 150px;
   }
+  
   input[type="color"] {
     padding-left: 56px;
+  }
+
+  span.form-field-error {
+    font-size: 12px;
+    color: #f14c40;
+    margin: 5px 0px 5px 0px;
   }
 `;
 
@@ -38,15 +47,11 @@ export const Input = styled.input`
   width: 100%;
   height: 57px;
   font-size: 1em;
-  
   outline: 0;
   border: 0;
   border-top: 4px solid transparent;
   border-bottom: 4px solid #53585D;
-  
   padding: 16px 16px;
-  margin-bottom: 45px;
-  
   resize: none;
   border-radius: 4px;
   transition: border-color .3s;

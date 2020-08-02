@@ -16,7 +16,6 @@ export const VideoCardContainer = styled.a`
   align-items: flex-end;
 
   transition: all 0.5s ease;
-  /* transition-delay: 0s;  */
 
   width: 293px;
   height: 165px;
@@ -30,7 +29,6 @@ export const VideoCardContainer = styled.a`
     &:focus {
       opacity: .5;
       margin: 0px 15px 0px 15px;
-      /* transition-delay: 0.1s; */
     }
   }
 

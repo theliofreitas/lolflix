@@ -19,7 +19,7 @@ function CadastroCategoria() {
   // const values = useFormObj.values;
   // const handleChange = useFormObj.handleChange;
   // Destructuring...
-  const { values, handleChange, clearForm } = useForm(valoresIniciais);
+  const { values, handleChange, clearForm } = useForm(valoresIniciais, () => {});
 
   const [categorias, setCategorias] = useState([]);
 

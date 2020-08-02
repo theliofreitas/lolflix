@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FormFieldWrapper, Label, Input } from './styles';
 
 function FormField({
-  label, type, name, value, onChange, as, suggestions,
+  label, type, name, value, onChange, onBlur, as, suggestions, spanError
 }) {
   const fieldId = `id_${name}`;
   const hasSuggestions = Boolean(suggestions.length);
@@ -17,6 +17,7 @@ function FormField({
           name={name}
           value={value}
           onChange={onChange}
+          onBlur={onBlur}
           autoComplete="off"
           list={`suggestionFor_${fieldId}`}
         />
@@ -37,6 +38,7 @@ function FormField({
             </datalist>
           )
         }
+        {spanError}
       </Label>
     </FormFieldWrapper>
   );
@@ -46,6 +48,7 @@ FormField.defaultProps = {
   type: 'text',
   value: '',
   onChange: () => {},
+  onBlur: () => {},
   as: '',
   suggestions: [],
 };
@@ -56,6 +59,7 @@ FormField.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  onBlur: PropTypes.func,
   as: PropTypes.string,
   suggestions: PropTypes.arrayOf(PropTypes.string),
 };
