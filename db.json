@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "titulo": "Worlds",
+      "titulo": "Campeonato Mundial",
       "cor": "#00C86F",
       "link_extra": {
         "text": "Mundiais de League of Legends",
@@ -20,20 +20,20 @@
     },
     {
       "id": 3,
-      "titulo": "Champion Montages",
+      "titulo": "Música no League",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Confira os melhores combos",
-        "url": "https://www.youtube.com/channel/UCzTucv2vIwshutDxyTcRhmw"
+        "text": "League of Legends Musics",
+        "url": "https://open.spotify.com/playlist/0Jy6viWYEm6PmwZp5xG75A"
       }
     },
     {
       "id": 4,
-      "titulo": "Skin Spotlights",
+      "titulo": "Champion Spotlights",
       "cor": "orange",
       "link_extra": {
-        "text": "Confira as novas Skins",
-        "url": "https://www.youtube.com/channel/UC0NwzCHb8Fg89eTB5eYX17Q"
+        "text": "Confira os novos Campeões",
+        "url": "https://www.youtube.com/playlist?list=PLbAFXJC0J5GaVjPNNw_i-oLNKc7bVQcFk"
       }
     },
     {
@@ -95,8 +95,8 @@
     {
       "id": 7,
       "categoriaId": 2,
-      "titulo": "Opening Ceremony | Finals | 2017 World Championship",
-      "url": "https://www.youtube.com/watch?v=fn5kSCj-VNM"
+      "titulo": "Match of the Week: Rogue vs G2 Esports",
+      "url": "https://www.youtube.com/watch?v=8bDV7AF-3Ck"
     },
     {
       "id": 8,
@@ -107,62 +107,62 @@
     {
       "id": 9,
       "categoriaId": 2,
-      "titulo": "2016 World Championship Moments and Memories",
-      "url": "https://www.youtube.com/watch?v=PyDZYLYWcNg"
+      "titulo": "LEC SUMMER 2020",
+      "url": "https://www.youtube.com/watch?v=2-J19S3FpnI"
     },
     {
       "id": 10,
       "categoriaId": 2,
-      "titulo": "2017 World Championship Moments and Memories",
-      "url": "https://www.youtube.com/watch?v=7uYoQ2i16nY"
+      "titulo": "Locked In: Thresh",
+      "url": "https://www.youtube.com/watch?v=idp6UVFiQ9Y"
     },
     {
       "id": 11,
       "categoriaId": 3,
-      "titulo": "Yone Montage - Insane Combo New Champion",
-      "url": "https://www.youtube.com/watch?v=gWN6dHe571Y"
+      "titulo": "True Damage - GIANTS",
+      "url": "https://www.youtube.com/watch?v=sVZpHFXcFJw"
     },
     {
       "id": 12,
       "categoriaId": 3,
-      "titulo": "Neeko Montage - Clean Combo",
-      "url": "https://www.youtube.com/watch?v=NQwaH6v9ffk"
+      "titulo": "RISE Remix (ft. BOBBY)",
+      "url": "https://www.youtube.com/watch?v=wHRUDL7GKmI"
     },
     {
       "id": 13,
       "categoriaId": 3,
-      "titulo": "Thresh Montage #6 League of Legends Thresh S10 Montage",
-      "url": "https://www.youtube.com/watch?v=E0XJXxLKyGg"
+      "titulo": "Ignite (ft. Zedd)",
+      "url": "https://www.youtube.com/watch?v=Zasx9hjo4WY"
     },
     {
       "id": 14,
       "categoriaId": 3,
-      "titulo": "Akali Montage #5 League of Legends Akali S10 Montage",
-      "url": "https://www.youtube.com/watch?v=q7aig4QhGY0"
+      "titulo": "The Curse of the Sad Mummy",
+      "url": "https://www.youtube.com/watch?v=0AvWV6Mk374"
     },
     {
       "id": 15,
       "categoriaId": 4,
-      "titulo": "Spirit Blossom Ahri",
-      "url": "https://www.youtube.com/watch?v=cfCbwHnBX20"
+      "titulo": "Lillia Champion Spotlight",
+      "url": "https://www.youtube.com/watch?v=lJqGoqNXuGo"
     },
     {
       "id": 16,
       "categoriaId": 4,
-      "titulo": "Spirit Blossom Thresh",
-      "url": "https://www.youtube.com/watch?v=Za5XLemQm0g"
+      "titulo": "Fiddlesticks Gameplay Preview",
+      "url": "https://www.youtube.com/watch?v=S6r5TwgDL4Q"
     },
     {
       "id": 17,
       "categoriaId": 4,
-      "titulo": "Spirit Blossom Riven",
-      "url": "https://www.youtube.com/watch?v=q6KbQXQTIW0"
+      "titulo": "Sett Champion Spotlight",
+      "url": "https://www.youtube.com/watch?v=n-KWeg-9GVU"
     },
     {
       "id": 18,
       "categoriaId": 4,
-      "titulo": "Spirit Blossom Cassiopeia",
-      "url": "https://www.youtube.com/watch?v=eLIKFsl8Xb0"
+      "titulo": "Aphelios Champion Spotlight",
+      "url": "https://www.youtube.com/watch?v=lDoeuuBRUFg"
     },
     {
       "id": 19,
@@ -219,22 +219,82 @@
       "id": 27
     },
     {
-      "titulo": "CARROS e MOTOS com HOMEM ARANHA e SUPER HERÓIS! Desafio de Super Carros e MOTOS na Rampa - IR GAMES",
-      "url": "v07H75lWdYw",
+      "titulo": "Take Over | Worlds 2020",
+      "url": "https://www.youtube.com/watch?v=KBTktTAQ_8k",
       "categoriaId": 2,
       "id": 28
     },
     {
-      "titulo": "Unha Pintada - Teste de Farmácia (Clipe Oficial)",
-      "url": "https://www.youtube.com/watch?v=Ybxingb1cHs",
-      "categoriaId": 5,
+      "titulo": "RISE (ft. The Glitch Mob, Mako, and The Word Alive)",
+      "url": "https://www.youtube.com/watch?v=fB8TyLTD7EE",
+      "categoriaId": 3,
       "id": 29
     },
     {
-      "titulo": "Um Teste de Cor que Pode Dizer a Sua Idade Mental",
-      "url": "https://www.youtube.com/watch?v=HrvTsw8GLMI",
-      "categoriaId": 5,
+      "titulo": "Warriors (ft. Imagine Dragons)",
+      "url": "https://www.youtube.com/watch?v=fmI_Ndrxy14",
+      "categoriaId": 3,
       "id": 30
+    },
+    {
+      "titulo": "Legends Never Die (ft. Against The Current)",
+      "url": "https://www.youtube.com/watch?v=r6zIGXun57U",
+      "categoriaId": 3,
+      "id": 31
+    },
+    {
+      "id": 32,
+      "categoriaId": 4,
+      "titulo": "Senna Champion Spotlight",
+      "url": "https://www.youtube.com/watch?v=9n97hMnjhbA"
+    }, 
+    {
+      "id": 33,
+      "categoriaId": 4,
+      "titulo": "Qiyana Champion Spotlight",
+      "url": "https://www.youtube.com/watch?v=3ECXeoLlR3I"
+    }, 
+    {
+      "id": 34,
+      "categoriaId": 4,
+      "titulo": "Kayle Champion Spotlight",
+      "url": "https://www.youtube.com/watch?v=GV074SIfNhA"
+    },
+    {
+      "id": 35,
+      "categoriaId": 4,
+      "titulo": "Sylas Champion Spotlight",
+      "url": "https://www.youtube.com/watch?v=3U4WdutoYbI"
+    },
+    {
+      "id": 36,
+      "categoriaId": 4,
+      "titulo": "Neeko Champion Spotlight",
+      "url": "https://www.youtube.com/watch?v=bPj48lmrynU"
+    },
+    {
+      "id": 37,
+      "categoriaId": 6,
+      "titulo": "DIA EM QUE BAIANO PERDEU O CONTRATO",
+      "url": "https://www.youtube.com/watch?v=JT_i8oTbGEU"
+    },
+    {
+      "id": 38,
+      "categoriaId": 6,
+      "titulo": "DEI MINHAS CAIXAS DO LOL PRA NAMORADA",
+      "url": "https://www.youtube.com/watch?v=6rlsgovEpNQ"
+    },
+    {
+      "id": 39,
+      "categoriaId": 6,
+      "titulo": "DUO MYLON",
+      "url": "https://www.youtube.com/watch?v=IOi9Z0mq9Tk"
+    },
+    {
+      "id": 40,
+      "categoriaId": 6,
+      "titulo": "SERÁ QUE O SWAIN CONSEGUE RETOMAR O PODER COM ESSES BUFFS?",
+      "url": "https://www.youtube.com/watch?v=qo04yLlI7tI"
     }
   ]
 }
